@@ -85,7 +85,7 @@ export const getProfiles = () => dispatch => {
     .get("/api/profile/all")
     .then(res =>
       dispatch({
-        type: GET_PROFILE,
+        type: GET_PROFILES,
         payload: res.data
       })
     )
