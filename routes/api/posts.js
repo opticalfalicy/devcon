@@ -228,7 +228,7 @@ router.delete(
 
           // Delete
           post.remove().then(() =>
-            json({
+            res.json({
               success: true
             })
           );
