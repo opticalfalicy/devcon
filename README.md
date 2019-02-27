@@ -6,3 +6,4 @@ Coding alongside:
 Section 1-3 Complete: 1/2/19
 Section 4 Complete: 1/4/19
 Section 5-6 Complete: 1/5/19
+Up to Section 11 Complete 2/24/19
