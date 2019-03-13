@@ -78,3 +78,5 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+
+/config/keys_dev.js
