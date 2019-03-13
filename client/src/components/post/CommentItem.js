@@ -41,7 +41,7 @@ class CommentItem extends Component {
   }
 }
 
-CommentItem.proptypes = {
+CommentItem.propTypes = {
   deleteComment: PropTypes.func.isRequired,
   comment: PropTypes.object.isRequired,
   postId: PropTypes.string.isRequired,
