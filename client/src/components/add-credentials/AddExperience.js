@@ -78,21 +78,21 @@ class AddExperience extends Component {
                 name="company"
                 value={this.state.company}
                 onChange={this.onChange}
-                errors={errors.company}
+                error={errors.company}
               />
               <TextFieldGroup
                 placeholder="* Job Title"
                 name="title"
                 value={this.state.title}
                 onChange={this.onChange}
-                errors={errors.title}
+                error={errors.title}
               />
               <TextFieldGroup
-                placeholder="* Location"
+                placeholder="Location"
                 name="location"
                 value={this.state.location}
                 onChange={this.onChange}
-                errors={errors.location}
+                error={errors.location}
               />
               <h6>From Date</h6>
               <TextFieldGroup
@@ -100,7 +100,7 @@ class AddExperience extends Component {
                 type="date"
                 value={this.state.from}
                 onChange={this.onChange}
-                errors={errors.from}
+                error={errors.from}
               />
               <h6>To Date</h6>
               <TextFieldGroup

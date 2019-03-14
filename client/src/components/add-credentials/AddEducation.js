@@ -79,21 +79,21 @@ class AddEducation extends Component {
                 name="school"
                 value={this.state.school}
                 onChange={this.onChange}
-                errors={errors.school}
+                error={errors.school}
               />
               <TextFieldGroup
-                placeholder="* Degree"
+                placeholder="* Degree Or Cert"
                 name="degree"
                 value={this.state.degree}
                 onChange={this.onChange}
-                errors={errors.degree}
+                error={errors.degree}
               />
               <TextFieldGroup
                 placeholder="* Field Of Study"
                 name="fieldofstudy"
                 value={this.state.fieldofstudy}
                 onChange={this.onChange}
-                errors={errors.fieldofstudy}
+                error={errors.fieldofstudy}
               />
               <h6>From Date</h6>
               <TextFieldGroup
@@ -101,7 +101,7 @@ class AddEducation extends Component {
                 type="date"
                 value={this.state.from}
                 onChange={this.onChange}
-                errors={errors.from}
+                error={errors.from}
               />
               <h6>To Date</h6>
               <TextFieldGroup
