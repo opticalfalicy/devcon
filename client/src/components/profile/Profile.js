@@ -6,6 +6,7 @@ import ProfileHeader from "./ProfileHeader";
 import ProfileAbout from "./ProfileAbout";
 import ProfileCreds from "./ProfileCreds";
 import ProfileGit from "./ProfileGit";
+import ProfileProject from "./ProfileProject";
 import Spinner from "../common/Spinner";
 import { getProfileByHandle } from "../../actions/profileActions";
 
@@ -43,6 +44,9 @@ class Profile extends Component {
             education={profile.education}
             exp={profile.experience}
           />
+          {/* {profile.featuredproject ? ( */}
+          <ProfileProject featuredproject={profile.featuredproject} />
+          {/* ) : null} */}
           {profile.githubusername ? (
             <ProfileGit username={profile.githubusername} />
           ) : null}
