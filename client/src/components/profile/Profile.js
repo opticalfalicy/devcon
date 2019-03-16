@@ -26,6 +26,7 @@ class Profile extends Component {
   render() {
     const { profile, loading } = this.props.profile;
     let profileContent;
+    console.log(this.props);
 
     if (profile === null || loading) {
       // if (loading) {
@@ -45,7 +46,7 @@ class Profile extends Component {
             exp={profile.experience}
           />
           {/* {profile.featuredproject ? ( */}
-          <ProfileProject featuredproject={profile.featuredproject} />
+          <ProfileProject project={profile.featuredProject} />
           {/* ) : null} */}
           {profile.githubusername ? (
             <ProfileGit username={profile.githubusername} />

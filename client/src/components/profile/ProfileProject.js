@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
+import Iframe from "react-iframe";
 
 class ProfileProject extends Component {
   constructor(props) {
@@ -22,18 +23,19 @@ class ProfileProject extends Component {
     //   .catch(err => console.log(err));
   }
   render() {
-    const { project } = this;
+    const { project } = this.props;
 
-    console.log("proj props", this);
+    console.log("proj props", project);
 
     const projectItem = project.map(item => (
       <div className="card card-body mb-2">
-        <iframe
-          title="project"
-          src={project.featuredproject}
-          width="200"
-          height="200"
-        />
+        <a href={`${item.projectLink}`}>
+          <img
+            className="card-img"
+            src={item.projectImg}
+            alt={item.projectTitle}
+          />
+        </a>
       </div>
     ));
 
@@ -44,6 +46,19 @@ class ProfileProject extends Component {
         {projectItem}
       </div>
     );
+
+    // return (
+    //   <div className="card card-body mb-2">
+    //     <Iframe
+    //       title="project"
+    //       // src={project.featuredproject}
+    //       url="http://www.facebook.com"
+    //       width="500"
+    //       height="400"
+    //       position="relative"
+    //     />
+    //   </div>
+    // );
   }
 }
 

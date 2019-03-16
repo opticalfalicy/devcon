@@ -140,8 +140,8 @@ router.post(
     if (req.body.status) profileFields.status = req.body.status;
     if (req.body.githubusername)
       profileFields.githubusername = req.body.githubusername;
-    if (req.body.featuredproject)
-      profileFields.featuredproject = req.body.featuredproject;
+    if (req.body.featuredProject)
+      profileFields.featuredProject = req.body.featuredProject;
     // Skills - Split into array
     if (typeof req.body.skills !== "undefined") {
       profileFields.skills = req.body.skills.split(",");
